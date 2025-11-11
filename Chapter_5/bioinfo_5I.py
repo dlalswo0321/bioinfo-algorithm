@@ -71,7 +71,6 @@ def OverlapAlign1(v, w):
 
 def OverlapAlign2(v, w):
     m, n = len(v), len(w)
-    # s와 d의 크기를 동일하게 (m+1) x (n+1)로 설정
     s = [[0]*(n+1) for _ in range(m+1)] 
     d = [[0]*(n+1) for _ in range(m+1)] 
     
