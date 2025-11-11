@@ -10,3 +10,4 @@ lines = content.split('\n')
 v, w = lines[0], lines[1]
 
 def OverlapAlign(v, w):
+    pass
