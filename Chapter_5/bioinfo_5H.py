@@ -10,6 +10,11 @@ lines = content.split('\n')
 v, w = lines[0], lines[1]
 
 def FittingAlignment(v, w):
+    '''
+    initiation
+    w를 다 써야되니까 j 쪽은 -1씩
+    시작은 어느 부분에서 하든 penalty 없어야 하니까 i 쪽은 0
+    '''
     n, m = len(v), len(w)
     s = {}
     for i in range(n+1):
@@ -19,6 +24,11 @@ def FittingAlignment(v, w):
     max_score = 0
     max_i = 0
 
+    '''
+    relaxation
+    indel, substitution 고려해서 왼쪽 위 대각선방향에서 -1한 값 중 최대
+
+    '''
     for i in range(n):
         for j in range(m):
             if v[i] == w[j]:
