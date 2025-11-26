@@ -1,6 +1,8 @@
 __pycache__/
+.vscode/
 dataset/
 .DS_Store
 Bioinformatics Algo'ms- An active learning approach.pdf link
 input/
 output/
+.gitignore
