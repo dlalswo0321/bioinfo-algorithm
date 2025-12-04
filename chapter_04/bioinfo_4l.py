@@ -21,6 +21,7 @@ def linear_spectrum(peptide):
 def LinearScore(peptide, spectrum):
     theo = linear_spectrum(peptide)
     spec = Counter(spectrum)
+    # 둘이 겹치는 만큼만 score에 추가
     return sum(min(theo[v], spec[v]) for v in theo)
 
 def Trim(Leaderboard, Spectrum, N):
