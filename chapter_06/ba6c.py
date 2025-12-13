@@ -1,5 +1,4 @@
-import sys
-
+# BA6C: 2-Break Distance
 def parse_genome_to_edges(genome_str):
     """
     문자열 형태의 유전체를 파싱하여 각 노드 간의 연결(Edge) 정보를 딕셔너리로 반환합니다.
